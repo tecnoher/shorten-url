@@ -1,5 +1,5 @@
 {
-    "name": "tzsk/shorten-url",
+    "name": "tecnoher/shorten-url",
     "type": "library",
     "description": "Google URL Shortener and Expander for Laravel 5.1 and Above.",
     "keywords": [
