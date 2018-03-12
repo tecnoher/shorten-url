@@ -81,7 +81,12 @@ class GoogleUrlShortener
     public function shorten($longUrl)
     {
         $response = $this->getShorternerResponse($longUrl);
-        if (! $this->extended) {
+        if (!is_object($response))
+        {
+            return $response;
+        }
+
+        if (! $this->extended && isset($response->id)) {
             self::$buffer[$longUrl] = $response->id;
         }
 
